@@ -3,7 +3,8 @@ import React from 'react';
 function StudentLogin() {
   return (
     <div>
-      <h2>Contenido de la página de Estudiante</h2>
+      <h1>Bienvenido, Estudiante</h1>
+      {/* Agrega más contenido relacionado con el login del estudiante aquí */}
     </div>
   );
 }
