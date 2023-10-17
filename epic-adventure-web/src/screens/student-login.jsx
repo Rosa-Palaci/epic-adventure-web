@@ -1,4 +1,3 @@
-import '../styles/student-login.css'
 function StudentLogin() {
   return (
     <div>

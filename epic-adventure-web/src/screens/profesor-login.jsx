@@ -1,4 +1,3 @@
-import '../styles/student-login.css'
 import { Formulario } from '../components/Forms';
 import { Profesor } from '../components/Profesor';
 import { useState } from 'react';

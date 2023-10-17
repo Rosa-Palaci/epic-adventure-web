@@ -1,3 +1,17 @@
+#root{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.304);
+    border-radius: 30px;
+}
+
+body{
+    background-color: aqua;
+}
+
+#root p{
+    color: rgb(255, 48, 48);
+}
+
 .forms{
     display: flex;
     justify-content: center;
@@ -5,3 +19,27 @@
     align-items: center;
     gap: 1rem;
 }
+
+.forms input{
+    height: 30px;
+    width: 60%;
+    border-radius: 15px;
+    padding: 7px;
+    margin: 5px;
+}
+
+.forms input:focus {
+    box-shadow: 0 0 40px rgb(34, 0, 255); 
+}
+
+.forms input, .forms input::placeholder {
+    padding: 9px;
+    font-family: 'Russo One', sans-serif; 
+}
+
+.forms .Login{
+    font-size: 18px;
+    padding: 10px;
+    margin: 15px;
+}
+
