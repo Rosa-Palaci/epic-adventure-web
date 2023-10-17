@@ -12,7 +12,6 @@ body{
   background-image: url('./assets/fondo-galaxia.jpg');
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.9;
 }
 
 .principal{
