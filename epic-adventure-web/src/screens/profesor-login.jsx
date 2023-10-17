@@ -1,8 +1,20 @@
+import '../styles/student-login.css'
+import { Formulario } from '../components/Forms';
+import { Profesor } from '../components/Profesor';
+import { useState } from 'react';
+
 function ProfesorLogin() {
+
+  const[user, setUser] = useState ([])
+
   return (
     <div>
-      <h1>Bienvenido, Profesor</h1>
-      {/* Agrega más contenido relacionado con el login del profesor aquí */}
+      {
+        !user.length > 0
+        ?<Formulario setUser={setUser}/>
+        :<Profesor user={user} setUser={setUser}/>
+      }
+      
     </div>
   );
 }
