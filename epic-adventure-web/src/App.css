@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+body{
+  background-image: url('./assets/fondo-galaxia.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.principal{
+  color: #fff;
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 0 0 20px rgb(67, 5, 255); /* Sombras blancas */
+  animation: neon 6s ease-in-out infinite alternate, typing 3s steps(20);
+  
+}
+
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 20px rgb(255, 5, 101);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(255, 205, 5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgb(67, 5, 255);
+  }
+}
+
+@keyframes typing {
+  from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.option button{
+  background-color: #a945c7;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 45px; 
+  
+}
+
+button:hover {
+  background-color: rgb(98, 46, 255); 
+  box-shadow: 0 0 10px rgb(98, 46, 255), 0 0 40px rgb(98, 46, 255), 0 0 80px rgb(98, 46, 255);
+  transition-delay: 1s;
+}
