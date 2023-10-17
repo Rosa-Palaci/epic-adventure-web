@@ -1,26 +1,27 @@
-import { useState } from 'react'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
+import Welcome from './components/welcome'
+import Options from './Options'
+import StudentLogin from './screens/student-login';
+import ProfesorLogin from './screens/profesor-login';
+
 
 function App() {
 
   return (
-    <div className='container'>
-      <div className='principal'>
-        <div className='title'>
-          <h1>¡Bienvenido a esta nueva aventura!</h1>
-        </div>
-        <div className='instructions'>
-          <h2>Selecciona tu tipo de usuario</h2>
-        </div>
-      </div> 
-      <div className='options'>
-        <button>Estudiante</button>
-        <button>Profesor</button>
-      </div>
+    <div >
+      <Welcome />
+      
+      <Router>
+        <Options />
+        <Routes>
+          <Route path='/estudiante' element={<StudentLogin/>}/>
+          <Route path='/profesor' element={<ProfesorLogin/>}/>
+        </Routes>
+      </Router>
+      
       
     </div>
-    
-     
     
   )
 }
